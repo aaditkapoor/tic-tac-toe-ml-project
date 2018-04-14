@@ -1,0 +1,86 @@
+
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/home/">Home</a></li>
+            <li role="presentation"><a href="/current_score/">Current Score (Classifier)</a></li>
+            <li role="presentation"><a href="/retrain_classifier/">Retrain Classifier</a></li>
+          </ul>
+        </nav>
+        <b><h3 class="text-muted">Tic Tac Toe (Machine Learning Project)</h3></b>
+      </div>
+      
+
+      <div class="jumbotron">
+       <h1>Welcome!</h1>
+       <b>
+               <p class="lead">Play Tic Tac Toe with the computer.</p>
+        <p>Built using a random forest classifier.</p><br>
+        <hr>
+        <p> Put 'x' or 'o' in the boxes below to play with a friend.<br>
+          <b>Computer play coming soon...</b><br>
+
+        <form action="/request_and_predict/" method="get">
+        <div class="form-group">
+
+          <label for="usr">first_row_left</label>
+  <input type="text" class="form-control" name="first_row_left" id="first_row_left"><br>
+
+          <label for="usr">first_row_middle</label>
+  <input type="text" class="form-control" name="first_row_middle" id="first_row_middle"><br>
+
+          <label for="usr">first_row_right</label>
+  <input type="text" class="form-control" name="first_row_right" id="first_row_right"><br>
+
+          <label for="usr">center_row_left</label>
+  <input type="text" class="form-control" name="center_row_left" id="center_row_left"><br>
+
+          <label for="usr">center_row_middle</label>
+  <input type="text" class="form-control" name="center_row_middle" id="center_row_middle"><br>
+
+          <label for="usr">center_row_right</label>
+  <input type="text" class="form-control" name="center_row_right" id="center_row_right"><br>
+
+          <label for="usr">bottom_row_left</label>
+  <input type="text" class="form-control" name="bottom_row_left" id="bottom_row_left"><br>
+
+          <label for="usr">bottom_row_middle</label>
+  <input type="text" class="form-control" name="bottom_row_middle" id="bottom_row_middle"><br>
+
+          <label for="usr">bottom_row_right</label>
+  <input type="text" class="form-control" name="bottom_row_right" id="bottom_row_right"><br>
+
+
+                 <button type="submit"  class="btn btn-lg btn-success">Evalute</button> 
+  <button type="submit"  class="btn btn-lg btn-success" formaction="/revise">Restart</button>
+
+      </form>
+
+     <hr>
+      <footer class="footer">
+        <b><p>&copy; 2018 Aadit Kapoor.</p><b>
+      </footer>
+
+    </div> <!-- /container -->
+
+</body>
+</html>

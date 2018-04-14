@@ -1,0 +1,8 @@
+TIC-TAC-TOE
+====================
+
+The project implements a machine learning that is used in playing a game of a tic tac toe with the computer or another player.
+Required Files:
+1. tic-tac-toe.data.txt => contains the the data for different games.
+2. ml-model => Code for the Machine Learning Model
+3. tic_tac_toe => Web interface built using django
